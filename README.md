@@ -2,11 +2,10 @@
 
 canvas 绘制的图片进行分类识别. 支持替换成自己训练的模型。
 
-- [tensorflow](https://www.tensorflow.org/js?hl=zh-cn) uses
+- [tensorflow](https://www.tensorflow.org/js?hl=zh-cn)
+- [leaferjs](https://github.com/leaferjs/ui)
 
-## Expanding the ESLint configuration
-
-使用示例
+## 使用示例
 
 ```js
    const leafer = new Leafer({
@@ -23,9 +22,13 @@ canvas 绘制的图片进行分类识别. 支持替换成自己训练的模型�
       resolve();
     }).then(() => {
       usePlugin(LeaafercocoSsd, { type: "cocossd" });
-    });,
+    });
+
 ```
 
+## 截图
+
+![识别结果]('./public/sso.png'')
 
 - npm run install
 - npm run dev
