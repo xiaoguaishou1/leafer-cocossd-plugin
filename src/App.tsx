@@ -17,6 +17,7 @@ import { Leafer, Image, usePlugin } from "leafer-ui";
 function App() {
   const [img, setFile] = useState<File>();
   useEffect(() => {
+    
     const leafer = new Leafer({
       view: document.getElementById("c") as HTMLCanvasElement,
       width: 500,
@@ -32,6 +33,8 @@ function App() {
     }).then(() => {
       usePlugin(LeaafercocoSsd, { type: "cocossd" });
     });
+
+
   });
 
   const handleFileChange = (event: any) => {
